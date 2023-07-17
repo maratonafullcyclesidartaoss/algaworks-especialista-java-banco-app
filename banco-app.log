@@ -1,0 +1,10 @@
+2023-07-16 11:08:49.473 WARN  c.g.s.b.n.Titular - Nome do titular 'João' muito curto.
+2023-07-16 11:08:49.476 DEBUG c.g.s.b.n.ContaCorrente - Realizando depósito...
+2023-07-16 11:08:49.479 INFO  c.g.s.b.n.ContaCorrente - Depósito de R$ 200 realizado na conta 100/9999
+2023-07-16 11:08:49.479 DEBUG c.g.s.b.n.ContaCorrente - Realizando saque...
+2023-07-16 11:08:49.479 INFO  c.g.s.b.n.ContaCorrente - Saque de R$ 50.5 realizado na conta 100/9999
+2023-07-16 11:08:49.480 DEBUG c.g.s.b.n.ContaCorrente - Realizando saque...
+2023-07-16 11:08:49.480 ERROR c.g.s.b.Principal - Erro administrando conta corrente 100/9999
+java.lang.IllegalArgumentException: Valor do saque deve ser maior que 0.
+	at com.github.sidartaoss.banco.negocio.ContaCorrente.sacar(ContaCorrente.java:58)
+	at com.github.sidartaoss.banco.Principal.main(Principal.java:24)
